@@ -1,6 +1,7 @@
 # MAGIC
 
-> [https://github.com/FDUDSDE/MAGIC](https://github.com/FDUDSDE/MAGIC)
+> [论文连接](https://www.usenix.org/conference/usenixsecurity24/presentation/jia-zian) <br>
+> [Github连接:https://github.com/FDUDSDE/MAGIC](https://github.com/FDUDSDE/MAGIC)
 
 ## 背景
 
@@ -52,9 +53,10 @@ GraphMAE（Graph Masked Autoencoder）是一种[自监督](https://www.notion.so
 - 性能优势：在多个图学习任务中，GraphMAE展现出优于传统对比学习方法的性能。
 
 GraphMAE的这种设计使其能够有效地捕捉图数据的结构和语义信息，为下游任务如节点分类、图分类等提供高质量的图表示。
-
+### 论文
 [GraphMAE: Self-Supervised Masked Graph Autoencoders | Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining](https://dl.acm.org/doi/abs/10.1145/3534678.3539321)
 
+### 讲解
 [[KDD'22] GraphMAE: 生成式图自监督学习超越对比学习 - 知乎](https://zhuanlan.zhihu.com/p/520389049)
 
 ## 和SOTA的对比
