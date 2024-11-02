@@ -6,8 +6,7 @@
 | name | Paper | date | content | dataset and code |
 | --- | --- | --- | --- | --- |
 | APT-KGL 
-
- | APT -KGL: An Intelligent APT Detection
+| APT -KGL: An Intelligent APT Detection
 System Based on Threat Knowledge and
 Heterogeneous Provenance Graph Learning（**TDSC、CCF-A**） | 2022 | APT -KGL使用异构出处图（HPG）构建上下文信息。并以离线方式学习HPG中每个系统实体的语义向量表示以半自动的方式从公开的威胁知识中创建虚拟APT训练样本 | [hwwzrzr/APT-KGL: APT-KGL: An Intelligent APT Detection System Based on Threat Knowledge and Heterogeneous Provenance Graph Learning (github.com)](https://github.com/hwwzrzr/APT-KGL) |
 | MEGR-APT | MEGR-APT: A Memory-Efficient APT
