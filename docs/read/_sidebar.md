@@ -1,1 +1,1 @@
-* [MAGIC](/read/magic.md)
+* [MAGIC](/read/magic/README.md)
