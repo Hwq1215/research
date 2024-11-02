@@ -1,0 +1,48 @@
+.logoContent{
+  line-height: 1;
+}
+@media (min-width: 1200px) {
+  .logoContent{
+    width: 300px;
+  }
+}
+
+.logoContent img{
+  margin-bottom: 10px;
+  margin-left: 10px;
+  max-height: 40px;
+  margin-right: 10px;
+}
+.logoContent span {
+  font-size: 33px;
+  font-weight: 1000;
+  color: #012970;
+  font-family: "Nunito", sans-serif;
+}
+
+.logo {
+  line-height: 1;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 300px;
+    height: auto;
+    display: flex;
+  }
+}
+
+.logo img {
+  margin-bottom: -10px;
+  margin-left: 0px;
+  max-height: 47px;
+  margin-right: 2px;
+}
+
+.logo span {
+  margin-top: 8px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #012970;
+  font-family: "Nunito", sans-serif;
+}
