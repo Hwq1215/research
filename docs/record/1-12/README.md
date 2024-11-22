@@ -96,7 +96,7 @@ $$
 - 预测器：在线网络的表示 $H_m$ 通过一个预测器，产生预测表示 $Z_m$，这个预测再和 $H_0$ 做对比
 - 余弦相似度： $\exp \left(\operatorname{sim}\left(z_i^m, h_i^o\right)\right)$ 衡量两个向量的方向一致性，公式下部分是所有在线表示和该节点预测表示的余项相似度。
 
-整个图的对比损失$\mathcal{L}_{\text {tra }}$是所有节点对比损失的平均值，因此以n为分子
+整个图的对比损失$\mathcal{L}_{\text {tra }}$是所有节点对比损失的平均值，因此以n为分母
 
 $$
 \mathcal{L}_{\text {tra }}=\frac{1}{n} \sum_{i=1}^n \mathcal{L}_{t r a}\left(v_i\right)
