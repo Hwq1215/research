@@ -63,9 +63,9 @@
 > 由于数据集过大，目前只完成了**streamspot**数据集的实验，以下是**MAGIC**和**ProtoMGAE**在streamspot的表现
 > 
 1. **MAGIC**基础方法（GraphMAE1代）
-    
-    ![image.png](image%201.png)
     ![image.png](image%205.png)
+    ![image.png](image%201.png)
+    
 2. **ProtoMGAE**（原型感知的掩码图自编码器）
     ![image.png](image.png)
     ![image.png](image%202.png)
