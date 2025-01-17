@@ -5,4 +5,5 @@
 * [1学期-13周记](/record/1-13/README)  
 * [1学期-14周记](/record/1-14/README)
 * [1学期-15周记](/record/1-15/README)
-* [1学期-15周记](/record/1-16/README)
+* [1学期-16周记](/record/1-16/README)
+* [1学期-17周记](/record/1-17/README)
