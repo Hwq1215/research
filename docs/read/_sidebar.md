@@ -1,2 +1,6 @@
 * [MAGIC](/read/magic/README.md)
 * [mimicry-provenance-generator](/read/mimicry-provenance-generator/README.md)
+* [StreamSpot](/read/streamspot/README.md)
+* [Unicorn](/read/unicorn/README.md)
+* [Prov-Detector](/read/prov-detector/README.md)
+* [Pagoda](/read/pagoda/README.md)
