@@ -16,3 +16,5 @@
 * [2学期-6 周记](/record/2-6/README)
 * [2学期-7 周记](/record/2-7/README)
 * [2学期-8 周记](/record/2-8/README)
+* [2学期-9 周记](/record/2-9/README)
+* [2学期-10 周记](/record/2-10/README)
