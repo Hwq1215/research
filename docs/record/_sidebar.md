@@ -18,3 +18,4 @@
 * [2学期-8 周记](/record/2-8/README)
 * [2学期-9 周记](/record/2-9/README)
 * [2学期-10 周记](/record/2-10/README)
+* [2学期-13 周记](/record/2-13/README)
