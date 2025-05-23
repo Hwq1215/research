@@ -151,6 +151,26 @@ $$
 
 刚开始想用平均距离来衡量紧凑，但是UMAP完成的散点图说明良性和恶意节点他们的中心不能简单的认为是所有点的中心，良性行为也有其聚类的多个中心。
 
+1. 单纯加入`mean` 来缩短同一类的紧凑损失，效果一般,单个效果更差
+
+```python
+            # 计算良性样本之间的平均距离
+            benign_centroid = torch.mean(benign_embed_norm, dim=0, keepdim=True)
+            compactness_loss_val = torch.mean(torch.norm(benign_embed_norm - benign_centroid, p=2, dim=1))
+            # 计算恶意样本之间的平均距离
+            malicious_centroid = torch.mean(malicious_embed_norm, dim=0, keepdim=True)
+            compactness_loss_val += torch.mean(torch.norm(malicious_embed_norm - malicious_centroid, p=2, dim=1))
+```
+
+1. 加入归一化，效果更差了 
+
+```
+            # 可选：对嵌入进行 L2 归一化
+            compactness = contrastive_labels = torch.full((1024,), 1, dtype=torch.long).to(g.device)
+            benign_embed_norm = torch.nn.functional.normalize(benign_embed, p=2, dim=1)
+            malicious_embed_norm = torch.nn.functional.normalize(malicious_embed, p=2, dim=1)
+```
+
 **使用余弦编码相似度 $1 - \cos(x_1, x_2) ,y=1$**
 
 效果也不太好，可能和平均距离类似
