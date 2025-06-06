@@ -92,7 +92,25 @@ trace:
 # 本周工作
 
 1. 尝试将原有的GAE变成GVAE，第一步是尝试将原来的嵌入和隐藏层再通过一个**VIB头**，加入**信息瓶颈正则项，**来获得更符合真实分布的嵌入空间，目前还在做实验和调整网络和参数。
+    
+    ```python
+       def forward(self, x, edge_index):
+    # 第一层 GAT 层，使用 ELU 激活函数
+            x = F.dropout(x, p=0.6, training=self.training)
+            x = F.elu(self.conv1(x, edge_index))
+    # 第二层 GAT 层
+            x = F.dropout(x, p=0.6, training=self.training)
+            x = self.conv2(x, edge_index).squeeze()
+    # 生成均值和方差
+            mu = self.fc_mu(x)
+            logvar = self.fc_logvar(x)
+            return mu, logvar
+    ```
+    
 2. 完成了论文introuction章节的内容，总结梳理了有关研究背景、文献内容,准备下周的BackGround的写作
+    
+    ![image.png](image%204.png)
+    
 
 ## 计划
 
